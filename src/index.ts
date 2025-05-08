@@ -74,3 +74,20 @@ const myCar = new Car("Toyota", 2020, "Corolla");
 
 // console.log(myCar.getInfo());
 // console.log(myCar.getModel());
+
+
+// P5
+
+function processValue(value: string | number): number{
+  if (typeof value === "string") {
+    return value.length;
+  }
+  return value * 2;
+};
+
+// processValue("hello"); // Output: 5
+// processValue(10);      // Output: 20
+
+
+console.log(processValue("hello"));
+console.log(processValue(10));
