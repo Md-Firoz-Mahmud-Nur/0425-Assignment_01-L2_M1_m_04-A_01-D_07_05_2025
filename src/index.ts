@@ -11,12 +11,6 @@ function filterByRating(
   return items.filter((item) => item.rating >= 4);
 }
 
-const books = [
-  { title: "Book A", rating: 4.5 },
-  { title: "Book B", rating: 3.2 },
-  { title: "Book C", rating: 5.0 },
-];
-
 function concatenateArrays<T>(...arrays: T[][]): T[] {
   return arrays.reduce((acc, curr) => acc.concat(curr), []);
 }
@@ -46,8 +40,6 @@ class Car extends Vehicle {
   }
 }
 
-const myCar = new Car("Toyota", 2020, "Corolla");
-
 function processValue(value: string | number): number {
   if (typeof value === "string") {
     return value.length;
@@ -72,12 +64,6 @@ function getMostExpensiveProduct(products: Product[]): Product | null {
   }
   return mostExpensiveProduct;
 }
-
-const products = [
-  { name: "Pen", price: 10 },
-  { name: "Notebook", price: 25 },
-  { name: "Bag", price: 50 },
-];
 
 enum Day {
   Monday,
