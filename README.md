@@ -1,8 +1,8 @@
-# TypeScript Blog: Understanding `keyof` and Enums
+# TypeScript Blog: Understanding keyof and Enums
 
-## 01. What is the use of the `keyof` keyword in TypeScript?
+## 01. What is the use of the keyof keyword in TypeScript?
 
-In TypeScript, the `keyof` keyword is used to create a **union type** of all keys in an object type. It helps make code **type-safe**, flexible, and dynamic when working with object properties.
+In TypeScript, the keyof keyword is used to create a union type of all keys in an object type. It helps make code type-safe, flexible, and dynamic when working with object properties.
 
 ### Syntax:
 
@@ -36,11 +36,11 @@ const userName = getProperty(user, "name"); // type: string
 const userAge = getProperty(user, "age"); // type: number
 ```
 
-With keyof, the function becomes type-aware, and you get auto-suggestions and compile-time error checking. For example, getProperty(user, "email") would give an error because email is not a key in Person.
+With keyof, the function becomes type-aware, and you get auto-suggestions and compile-time error checking.
 
-### What is the use of Enums in TypeScript?
+## 02. What is the use of Enums in TypeScript?
 
-Enums (short for “enumerations”) are a special feature in TypeScript that allows you to define a set of named constants. Enums make your code more readable and organized, especially when dealing with fixed sets of values.
+Enums are a special feature in TypeScript that allows you to define a set of named constants. Enums make your code more readable and organized, especially when dealing with fixed sets of values.
 
 ```ts
 enum Direction {
@@ -62,11 +62,9 @@ enum StatusCode {
   NotFound = 404,
   ServerError = 500,
 }
-```
 
-### String Enum:
+// String Enum:
 
-```ts
 enum Color {
   Red = "RED",
   Green = "GREEN",
@@ -81,10 +79,10 @@ String enums are helpful when you need to serialize or display the values direct
 
 ### Why Use Enums?
 
-1.  Code is cleaner and more self-documenting.
+01.  Code is cleaner and more self-documenting.
 
-2.  Prevents typos in strings or magic numbers.
+02.  Prevents typos in strings or magic numbers.
 
-3.  Allows easy updates in one place.
+03.  Allows easy updates in one place.
 
-These powerful features (keyof and enum) make TypeScript development more robust, error-free, and scalable for real-world applications.
+### These powerful features (keyof and enum) make TypeScript development more robust, error-free, and scalable for real-world applications.
