@@ -2,7 +2,7 @@
 
 ## 01. What is the use of the keyof keyword in TypeScript?
 
-In TypeScript, the keyof keyword is used to create a union type of all keys in an object type. It helps make code type-safe, flexible, and dynamic when working with object properties.
+In TypeScript, the keyof keyword is used to create a **union** type of all keys in an object type. It helps make code **type-safe**, flexible, and dynamic when working with object properties.
 
 ### Syntax:
 
@@ -36,11 +36,11 @@ const userName = getProperty(user, "name"); // type: string
 const userAge = getProperty(user, "age"); // type: number
 ```
 
-With keyof, the function becomes type-aware, and you get auto-suggestions and compile-time error checking.
+With **keyof**, the function becomes type-aware, and you get auto-suggestions and compile-time error checking.
 
 ## 02. What is the use of Enums in TypeScript?
 
-Enums are a special feature in TypeScript that allows you to define a set of named constants. Enums make your code more readable and organized, especially when dealing with fixed sets of values.
+Enums are a special feature in TypeScript that allows you to define a set of named **constants**. Enums make your code more readable and organized, especially when dealing with fixed sets of values.
 
 ```ts
 enum Direction {
